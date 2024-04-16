@@ -18,7 +18,7 @@ RUN mkdir /opt/app
 
 COPY --from=build /opt/app/target/app.jar /opt/app/app.jar
 
-wORKDIR	/opt/app
+WORKDIR	/opt/app
 
 ENV PROFILE=dev
 
