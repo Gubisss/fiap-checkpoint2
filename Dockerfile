@@ -8,10 +8,6 @@ WORKDIR /opt/app
 
 RUN mvn clean package
 
-ENV PROFILE=dev
-
-EXPOSE 8080
-
 FROM eclipse-temurin:18-jre-alpine
 
 RUN mkdir /opt/app
